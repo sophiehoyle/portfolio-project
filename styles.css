@@ -1,0 +1,284 @@
+/*----MAIN CSS----*/
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box {
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #151318;
+}
+
+.logo {
+	width: 25%;
+	max-width: 100px;
+	margin-top: 17px;
+	margin-bottom: 10px;
+	margin-left: 25px
+}
+
+.titles {
+	font-family: 'Rajdhani', sans-serif;
+	color: #fff;
+	width: 75%;
+	margin-left: auto;
+	margin-right: 25px;
+	max-width: 860px;
+	text-align: right;
+}
+
+.background {
+	height: 80vh;
+	margin-top: 0em;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/background-1.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.summary {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 3em;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 7px;
+}
+
+a {
+	margin-left: 5px;
+}
+
+a:link {
+	color: #fff;
+}
+
+a:visited {
+	color: #e6e6dc;
+}
+
+a:hover {
+	color: #e70614;
+}
+
+a:active {
+	color: #e6e6dc;
+}
+
+.project-background {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/background-2.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 0em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	width: 100%;
+}
+
+.project-body {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	margin-top: 0;
+}
+
+.project {
+	display: flex;
+	justify-content: center;
+	height: 70%;
+	overflow: hidden;
+	width: 30%;
+	background-position: center;
+}
+
+.project-text {
+	font-family: 'Rajdhani', sans-serif;
+	background-color: rgba(7, 7, 7, 0.8);
+	height: 100px;
+	width: 100%;
+	align-self: flex-end;
+}
+
+.project-name {
+	margin-left: 5px;
+	margin-bottom: 10px;
+	color: #fff;
+	font-weight: normal;
+	font-size: 1.4em;
+}
+
+.project-one {
+	background: url(images/music-website.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.project-two {
+	background: url(images/cycle-website.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.project-three {
+	background: url(images/band-website.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+footer {
+	background-color: #151318 !important;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.footer-info {
+	color: #fff;
+	text-align: center;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+/*----RESPONSIVE CSS----*/
+@media only screen and (max-width: 525px) {
+	.titles {
+		width: 50%;
+		margin-top: 10px;
+	}
+
+	.name {
+		font-size: 1.6em;
+	}
+
+	.job-title {
+		font-size: 1.2em;
+	}
+
+	.summary {
+		font-size: 1.8em;
+	}
+
+	.project-body {
+		flex-direction: column;
+		height: 85%;
+	}
+
+	.project {
+		width: 90%;
+	}
+
+	.project-text {
+		height: 80px;
+	}
+
+	.project-name {
+		margin-top: 10px;
+	}
+
+	.project-one {
+		margin-bottom: 10px;
+	}
+
+	.project-two {
+		margin-bottom: 10px;
+	}
+}
+@media only screen and (min-width: 526px) {
+	.titles {
+		width: 50%;
+		margin-top: 10px;
+	}
+
+	.summary {
+		font-size: 2.2em;
+	}
+
+	.project-body {
+		flex-wrap: wrap;
+	}
+
+	.project {
+		height: 180px;
+		width: 48%;
+	}
+
+	.project-text {
+		height: 80px;
+	}
+
+	.project-name {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.project-text a {
+		margin-left: 10px;
+	}
+
+	.project-three {
+		margin-top: 0px;
+	}
+}
+@media only screen and (min-width: 800px) {
+	.summary {
+		font-size: 3em;
+	}
+
+	.project-body {
+		flex-wrap: wrap;
+	}
+
+	.project {
+		height: 250px;
+		width: 32.5%;
+	}
+
+	.project-name {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.project-text {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 80px;
+	}
+
+	.project-text a {
+		font-size: 0.95em;
+		margin-right: 5px;
+	}
+
+	.name {
+		font-size: 2em;
+	}
+
+	.job-title {
+		margin-top: 0px;
+		font-size: 1.5em;
+	}
+}
